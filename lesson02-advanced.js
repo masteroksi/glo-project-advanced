@@ -26,8 +26,21 @@ const multiplicationOfNumbers2 = (number) => {
 
 console.log(multiplicationOfNumbers2(num));
 
-function pow(num, exponent) {
+const pow = (num, exponent) => {
     return num ** exponent;
-}
+};
 
 console.log(pow(multiplicationOfNumbers(num), 3));
+
+const getFirstTwoNumbers = (number) => {
+    return number.toString().substring(0, 2);
+};
+
+document.write(
+    getFirstTwoNumbers(
+        pow(
+            multiplicationOfNumbers(num),
+            3
+        )
+    )
+);
